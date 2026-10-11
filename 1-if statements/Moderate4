@@ -1,0 +1,26 @@
+//9. Input a student's marks and display 'Excellent' if marks are 80 or above.
+#include <iostream>
+using namespace std;
+int main()
+{
+	int marks;
+	cout << "Enter marks of student :";
+	cin>> marks;
+	if (marks>= 80)
+	{
+	cout<< "Excellent marks!";}
+	return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

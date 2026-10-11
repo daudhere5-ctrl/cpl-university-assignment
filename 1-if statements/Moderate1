@@ -1,0 +1,21 @@
+//6. Input two numbers and display the first if it is greater than the second.
+#include <iostream>
+using namespace std;
+int main()
+{
+	int number1, number2;
+	cout <<"Enter 1st number:";
+	cin>> number1;
+	cout<< "Enter 2nd number :";
+	cin>> number2;
+	if(number1>number2)
+	{
+	cout<< "Grater number is="<<number1;
+}
+	
+	
+return 0;	
+
+	
+	
+}

@@ -1,0 +1,33 @@
+//42. Calculate percentage and grade of five subjects.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c, d, e;
+    float percentage;
+    cout<<"Enter marks of five subjects: ";
+    cin>>a>>b>>c>>d>>e;
+
+    percentage=(a+b+c+d+e)/5.0;
+    cout<<"Percentage = "<<percentage<<"%"<<endl;
+
+    if (percentage>=90)
+    {
+        cout<<"Grade A";
+    }
+    else if (percentage>=80)
+    {
+        cout<<"Grade B";
+    }
+    else if (percentage>=70)
+    {
+        cout<<"Grade C";
+    }
+    else if (percentage>=60)
+    {
+        cout<<"Grade D";
+    }
+    else {cout<<"Grade F";}
+
+    return 0;
+}

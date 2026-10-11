@@ -1,0 +1,14 @@
+//8. Input a person's age and display 'Senior citizen' if age is 60 or above.
+#include <iostream>
+using namespace std;
+int main()
+{
+	int age;
+	cout<< "Enter person's age :";
+	cin>> age;
+	if(age >= 60)
+	{
+	cout << "Senoir citizen";}
+	return 0;
+	
+}

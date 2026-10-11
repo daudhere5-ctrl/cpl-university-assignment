@@ -1,0 +1,23 @@
+//64. Check username code and PIN.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int username, pin;
+    cout<<"Enter username code: ";
+    cin>>username;
+
+    if (username==123)
+    {
+        cout<<"Enter PIN: ";
+        cin>>pin;
+        if (pin==4567)
+        {
+            cout<<"Login successful";
+        }
+        else {cout<<"Incorrect PIN";}
+    }
+    else {cout<<"Incorrect username";}
+
+    return 0;
+}

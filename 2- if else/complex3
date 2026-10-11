@@ -1,0 +1,19 @@
+//27. Check voting eligibility using age and citizenship.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int age, citizen;
+    cout<<"Enter your age: ";
+    cin>>age;
+    cout<<"Are you a citizen? (1=yes, 0=no): ";
+    cin>>citizen;
+
+    if (age>=18 && citizen==1)
+    {
+        cout<<"Eligible to vote";
+    }
+    else {cout<<"Not eligible to vote";}
+
+    return 0;
+}

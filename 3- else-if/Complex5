@@ -1,0 +1,26 @@
+//45. Calculate water bill using progressive rates.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int litres;
+    float bill;
+    cout<<"Enter water consumption in litres: ";
+    cin>>litres;
+
+    if (litres<=100)
+    {
+        bill=litres*2;
+    }
+    else if (litres<=200)
+    {
+        bill=100*2+(litres-100)*3;
+    }
+    else
+    {
+        bill=100*2+100*3+(litres-200)*5;
+    }
+
+    cout<<"Water bill = Rs. "<<bill;
+    return 0;
+}

@@ -1,0 +1,30 @@
+//73. Check scholarship eligibility.
+#include <iostream>
+using namespace std;
+int main()
+{
+    float marks, income;
+    int failed;
+    cout<<"Enter marks percentage: ";
+    cin>>marks;
+
+    if (marks>=80)
+    {
+        cout<<"Enter monthly family income: ";
+        cin>>income;
+        if (income<60000)
+        {
+            cout<<"Any failed subjects? (1=yes, 0=no): ";
+            cin>>failed;
+            if (failed==0)
+            {
+                cout<<"Eligible for scholarship";
+            }
+            else {cout<<"Not eligible: Failed subjects";}
+        }
+        else {cout<<"Not eligible: Income too high";}
+    }
+    else {cout<<"Not eligible: Marks below 80%";}
+
+    return 0;
+}

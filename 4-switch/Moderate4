@@ -1,0 +1,41 @@
+//54. Create a simple ATM menu.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int choice;
+    float balance=5000, amount;
+    cout<<"1 = Check balance"<<endl;
+    cout<<"2 = Deposit"<<endl;
+    cout<<"3 = Withdraw"<<endl;
+    cout<<"Select option: ";
+    cin>>choice;
+
+    switch(choice)
+    {
+        case 1: cout<<"Balance = Rs. "<<balance; break;
+        case 2:
+            cout<<"Enter deposit amount: ";
+            cin>>amount;
+            if (amount>0)
+            {
+                balance=balance+amount;
+                cout<<"New balance = Rs. "<<balance;
+            }
+            else {cout<<"Invalid amount";}
+            break;
+        case 3:
+            cout<<"Enter withdrawal amount: ";
+            cin>>amount;
+            if (amount>0 && amount<=balance)
+            {
+                balance=balance-amount;
+                cout<<"New balance = Rs. "<<balance;
+            }
+            else {cout<<"Invalid amount or insufficient balance";}
+            break;
+        default: cout<<"Invalid choice";
+    }
+
+    return 0;
+}

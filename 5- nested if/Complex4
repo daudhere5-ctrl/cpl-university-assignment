@@ -1,0 +1,30 @@
+//74. Check PIN, withdrawal amount and balance.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int pin;
+    float amount, balance=10000;
+    cout<<"Enter PIN: ";
+    cin>>pin;
+
+    if (pin==1234)
+    {
+        cout<<"Enter withdrawal amount: ";
+        cin>>amount;
+        if (amount>0)
+        {
+            if (amount<=balance)
+            {
+                balance=balance-amount;
+                cout<<"Withdrawal successful"<<endl;
+                cout<<"Remaining balance = Rs. "<<balance;
+            }
+            else {cout<<"Insufficient balance";}
+        }
+        else {cout<<"Amount must be positive";}
+    }
+    else {cout<<"Incorrect PIN";}
+
+    return 0;
+}

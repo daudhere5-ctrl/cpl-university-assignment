@@ -1,0 +1,19 @@
+//29. Compare original price and selling price.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int original, selling;
+    cout<<"Enter original price: ";
+    cin>>original;
+    cout<<"Enter selling price: ";
+    cin>>selling;
+
+    if (selling>original)
+    {
+        cout<<"Profit = "<<selling-original;
+    }
+    else {cout<<"No profit";}
+
+    return 0;
+}

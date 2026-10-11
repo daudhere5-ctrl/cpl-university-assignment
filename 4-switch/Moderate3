@@ -1,0 +1,24 @@
+//53. Display season using switch.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int choice;
+    cout<<"1 = Winter"<<endl;
+    cout<<"2 = Spring"<<endl;
+    cout<<"3 = Summer"<<endl;
+    cout<<"4 = Autumn"<<endl;
+    cout<<"Select season: ";
+    cin>>choice;
+
+    switch(choice)
+    {
+        case 1: cout<<"Winter"; break;
+        case 2: cout<<"Spring"; break;
+        case 3: cout<<"Summer"; break;
+        case 4: cout<<"Autumn"; break;
+        default: cout<<"Invalid choice";
+    }
+
+    return 0;
+}

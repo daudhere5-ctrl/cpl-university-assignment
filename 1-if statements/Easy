@@ -1,0 +1,17 @@
+//1. Input a number and display a message if it is positive.
+#include <iostream>
+using namespace std;
+int main()
+{
+int number;
+cout<< "Enter a number :";
+cin>> number;
+if(number >0)
+{cout << "Positive number";
+	}	
+	else 
+	{
+		cout<< "Not a positive number!";
+	}
+	return 0;
+}

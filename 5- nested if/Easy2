@@ -1,0 +1,21 @@
+//62. Check whether a positive number is even or odd.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int number;
+    cout<<"Enter a number: ";
+    cin>>number;
+
+    if (number>0)
+    {
+        if (number%2==0)
+        {
+            cout<<"Positive even number";
+        }
+        else {cout<<"Positive odd number";}
+    }
+    else {cout<<"Number is not positive";}
+
+    return 0;
+}

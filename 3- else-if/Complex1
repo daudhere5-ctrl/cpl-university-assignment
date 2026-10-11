@@ -1,0 +1,26 @@
+//41. Calculate bonus according to salary.
+#include <iostream>
+using namespace std;
+int main()
+{
+    float salary, bonus;
+    cout<<"Enter basic salary: ";
+    cin>>salary;
+
+    if (salary<30000)
+    {
+        bonus=salary*0.20;
+    }
+    else if (salary<60000)
+    {
+        bonus=salary*0.15;
+    }
+    else
+    {
+        bonus=salary*0.10;
+    }
+
+    cout<<"Bonus = Rs. "<<bonus;
+    cout<<"\nTotal salary = Rs. "<<salary+bonus;
+    return 0;
+}

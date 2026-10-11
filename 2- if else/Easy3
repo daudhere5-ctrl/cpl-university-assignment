@@ -1,0 +1,18 @@
+//18. Input age and check whether the person is eligible to vote.
+#include <iostream>
+using namespace std;
+int main()
+	{
+		int age;
+		cout<< "Enter ur age :";
+		cin>> age;
+			if(age >=18)
+			{
+			cout<< "Ur aligible for vote!";
+		}
+
+	else{cout<< "Ur not eligible!";
+	}	
+		
+		
+}

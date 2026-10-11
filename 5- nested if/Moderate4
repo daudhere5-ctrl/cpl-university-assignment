@@ -1,0 +1,26 @@
+//69. Apply discount according to purchase and membership.
+#include <iostream>
+using namespace std;
+int main()
+{
+    float amount, discount;
+    int member;
+    cout<<"Enter purchase amount: ";
+    cin>>amount;
+
+    if (amount>=5000)
+    {
+        cout<<"Are you a member? (1=yes, 0=no): ";
+        cin>>member;
+        if (member==1)
+        {
+            discount=amount*0.15;
+        }
+        else {discount=amount*0.05;}
+    }
+    else {discount=amount*0.05;}
+
+    cout<<"Discount = Rs. "<<discount<<endl;
+    cout<<"Final amount = Rs. "<<amount-discount;
+    return 0;
+}

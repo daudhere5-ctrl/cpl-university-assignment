@@ -1,0 +1,20 @@
+//49. Display operation name using switch.
+#include <iostream>
+using namespace std;
+int main()
+{
+    char op;
+    cout<<"Enter operator (+, -, *, /): ";
+    cin>>op;
+
+    switch(op)
+    {
+        case '+': cout<<"Addition"; break;
+        case '-': cout<<"Subtraction"; break;
+        case '*': cout<<"Multiplication"; break;
+        case '/': cout<<"Division"; break;
+        default: cout<<"Invalid operator";
+    }
+
+    return 0;
+}

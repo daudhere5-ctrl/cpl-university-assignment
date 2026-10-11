@@ -1,0 +1,25 @@
+//25. Input the total purchase amount. Give a 10% discount if it is at least Rs. 5,000; otherwise give no discount. Display the final amount.
+#include <iostream>
+using namespace std;
+int main()
+{
+   int spend;
+   cout<< "Enter spent amount :";
+   cin>> spend;
+   if (spend>=5000)
+   {
+   cout<< "Ur getting a 10% discount.Now ur payable amount is ="<< spend-(spend*0.10)<<endl;
+}
+else {cout<< "Ur not getting discount as ur amount spent is less than 5000.";
+    }	
+	return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

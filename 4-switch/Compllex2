@@ -1,0 +1,25 @@
+//57. Convert units using switch.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int choice;
+    float value;
+    cout<<"1 = Kilometres to metres"<<endl;
+    cout<<"2 = Metres to centimetres"<<endl;
+    cout<<"3 = Kilograms to grams"<<endl;
+    cout<<"Select conversion: ";
+    cin>>choice;
+    cout<<"Enter value: ";
+    cin>>value;
+
+    switch(choice)
+    {
+        case 1: cout<<"Metres = "<<value*1000; break;
+        case 2: cout<<"Centimetres = "<<value*100; break;
+        case 3: cout<<"Grams = "<<value*1000; break;
+        default: cout<<"Invalid choice";
+    }
+
+    return 0;
+}

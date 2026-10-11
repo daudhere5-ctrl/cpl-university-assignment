@@ -1,0 +1,22 @@
+//13. Input a number and display 'Valid two-digit number' if it is between 10 and 99.
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int number1;
+	cout << "Enter number 1:";
+	cin>> number1;
+	if (number1>=10 && number1<=99 )
+	{
+	
+	cout << "Valid two-digit number!";
+}
+return 0;
+	
+	
+	
+	
+	
+	
+}

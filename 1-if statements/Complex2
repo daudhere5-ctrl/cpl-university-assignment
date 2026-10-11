@@ -1,0 +1,18 @@
+//12. Input a year and display 'Leap year' if it is divisible by 400, or divisible by 4 but not by 100.
+#include <iostream>
+using namespace std;
+int main()
+{
+	int year;
+	cout<< "Enter a year :";
+	cin>> year;{
+	if( year % 400 ==0  || (year %4 == 0 && year %4 !=4))
+	cout << "Leap year!";
+	}
+return 0;
+	
+	
+	
+	
+	
+}

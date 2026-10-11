@@ -1,0 +1,21 @@
+//34. Classify temperature.
+#include <iostream>
+using namespace std;
+int main()
+{
+    float temp;
+    cout<<"Enter temperature: ";
+    cin>>temp;
+
+    if (temp<15)
+    {
+        cout<<"Cold";
+    }
+    else if (temp<=30)
+    {
+        cout<<"Moderate";
+    }
+    else {cout<<"Hot";}
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+//22. Input a character and check whether it is a vowel or not. Assume the input is a letter.
+#include <iostream>
+using namespace std;
+int main()
+{
+char A;
+cout <<"Enter an alphabet :";
+cin>> A;
+if (A=='a' || A=='e'|| A== 'i' || A== 'o' || A== 'u'     )	
+	{
+	cout << "You entered a vowel!";}
+	else{cout<< "Not a vowel!";
+	}
+	return 0;
+	
+	
+}

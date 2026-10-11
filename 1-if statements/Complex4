@@ -1,0 +1,18 @@
+//14. Input a salary and display the bonus amount if salary is below 50,000. Bonus = 10% of salary.
+#include <iostream>
+using namespace std;
+int main()
+{
+float scalery;
+cout << "Enter amount of scalery:";
+cin>> scalery;
+if (scalery < 50000){
+
+cout << "U got a bonous of 10%,now ur scalery is= "<<scalery*0.10<<endl;
+}
+return 0;	
+	
+	
+	
+	 
+}

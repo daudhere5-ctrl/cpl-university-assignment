@@ -1,0 +1,24 @@
+//67. Check average and individual subject marks.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    float average;
+    cout<<"Enter three subject marks: ";
+    cin>>a>>b>>c;
+
+    average=(a+b+c)/3.0;
+
+    if (average>=50)
+    {
+        if (a>=40 && b>=40 && c>=40)
+        {
+            cout<<"Pass";
+        }
+        else {cout<<"Fail: A subject is below 40";}
+    }
+    else {cout<<"Fail: Average is below 50";}
+
+    return 0;
+}

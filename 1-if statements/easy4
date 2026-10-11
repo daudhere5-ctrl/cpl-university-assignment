@@ -1,0 +1,17 @@
+//4. Input marks and display 'Passed' if marks are 50 or above.
+#include <iostream>
+using namespace std;
+int main()
+{
+int marks;
+cout<< "Enter obtained marks :";
+cin>> marks;
+if(marks >50) 
+	cout <<" Congrats u have passed!";
+	return 0;
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,18 @@
+
+ //16. Input a number and check whether it is positive or not positive.
+#include <iostream>
+using namespace std;
+int main()
+{
+   int number;
+   cout<<"Enter a number: ";
+   cin>>number;
+
+   if (number>0)
+   {
+      cout<<"Positive number";
+   }
+   else {cout<<"Not positive";}
+
+   return 0;
+}

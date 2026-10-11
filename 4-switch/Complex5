@@ -1,0 +1,60 @@
+//60. Calculate percentage, grade or pass/fail.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int choice, obtained, total;
+    float percentage;
+    cout<<"1 = Percentage"<<endl;
+    cout<<"2 = Grade"<<endl;
+    cout<<"3 = Pass or Fail"<<endl;
+    cout<<"Select option: ";
+    cin>>choice;
+    cout<<"Enter obtained and total marks: ";
+    cin>>obtained>>total;
+
+    if (total<=0 || obtained<0 || obtained>total)
+    {
+        cout<<"Invalid marks";
+    }
+    else
+    {
+        percentage=(obtained*100.0)/total;
+
+        switch(choice)
+        {
+            case 1:
+                cout<<"Percentage = "<<percentage<<"%";
+                break;
+            case 2:
+                if (percentage>=90)
+                {
+                    cout<<"Grade A";
+                }
+                else if (percentage>=80)
+                {
+                    cout<<"Grade B";
+                }
+                else if (percentage>=70)
+                {
+                    cout<<"Grade C";
+                }
+                else if (percentage>=60)
+                {
+                    cout<<"Grade D";
+                }
+                else {cout<<"Grade F";}
+                break;
+            case 3:
+                if (percentage>=50)
+                {
+                    cout<<"Pass";
+                }
+                else {cout<<"Fail";}
+                break;
+            default: cout<<"Invalid choice";
+        }
+    }
+
+    return 0;
+}

@@ -1,0 +1,21 @@
+//10. Input a number and display its square if it is between 1 and 100, inclusive.
+#include <iostream>
+using namespace std;
+int main()
+{
+	int numbers;
+	cout << "Enter a number :";
+	cin>> numbers;
+	if(numbers >=1 && numbers <=100 )
+	{
+		
+		cout<< "square is ="<<numbers*numbers<<endl;
+	}
+	return 0;
+	
+	
+	
+	
+	
+	
+}

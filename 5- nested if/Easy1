@@ -1,0 +1,23 @@
+//61. Check age and valid ID.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int age, id;
+    cout<<"Enter your age: ";
+    cin>>age;
+
+    if (age>=18)
+    {
+        cout<<"Do you have a valid ID? (1=yes, 0=no): ";
+        cin>>id;
+        if (id==1)
+        {
+            cout<<"Valid ID";
+        }
+        else {cout<<"No valid ID";}
+    }
+    else {cout<<"Under 18";}
+
+    return 0;
+}

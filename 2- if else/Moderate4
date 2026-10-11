@@ -1,0 +1,29 @@
+//24. Input a person's age and check whether they receive a senior discount (age 60 or above).
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int age;
+	cout<< "Enter ur name :";
+	cin>> age;
+	if( age>= 60)
+	{ 
+	cout<< "Ur getting a senior discount!";
+	}
+	else{
+		
+		cout<< "Ur not eligible!";
+		
+	}
+	return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,25 @@
+//43. Check and classify a triangle using its angles.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a, b, c;
+    cout<<"Enter three angles: ";
+    cin>>a>>b>>c;
+
+    if (a>0 && b>0 && c>0 && a+b+c==180)
+    {
+        if (a==90 || b==90 || c==90)
+        {
+            cout<<"Right triangle";
+        }
+        else if (a>90 || b>90 || c>90)
+        {
+            cout<<"Obtuse triangle";
+        }
+        else {cout<<"Acute triangle";}
+    }
+    else {cout<<"Invalid triangle";}
+
+    return 0;
+}

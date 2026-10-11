@@ -1,0 +1,20 @@
+//15. Input a number and display 'Divisible by both 3 and 5' if both conditions are true.
+#include <iostream>
+using namespace std;
+int main()
+{
+	int number;
+	cout << "Enter a number :";
+	cin>> number;
+	if(number %3 ==0 && number%5 ==0 )
+	{cout <<"Disible by 3 and 5!";
+}
+return 0;	
+	
+	
+	
+	
+	
+	
+	
+}

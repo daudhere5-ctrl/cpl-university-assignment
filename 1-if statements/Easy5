@@ -1,0 +1,14 @@
+//5. Input temperature and display 'Hot weather' if temperature is above 35.
+#include <iostream>
+using namespace std;
+int main()
+{
+int temperature;
+cout << "Enter current temperature :";
+cin>> temperature;
+if(temperature >35)
+{
+cout << "Hot Weather";
+}
+	return 0;
+}
